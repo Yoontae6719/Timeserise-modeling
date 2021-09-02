@@ -1,0 +1,37 @@
+#Hyper Params
+batch_size: 64
+device: cuda
+lr: 0.001
+num_epochs: 20
+n_workers: 4
+model: deepAR
+loader: base
+predict_batch : 256
+
+# Dataset
+data_path : "./data/elect_data/elect/"
+num_class : 370
+cov_dim : 4
+predict_start : 168
+test_predict_start : 168
+
+# Model deepAR
+embedding_dim : 20
+lstm_layers : 3
+lstm_hidden_dim : 40
+lstm_dropout : 0.1
+train_window : 192
+test_window : 192
+distributon : "g"
+
+
+quantiles:
+- 0.1
+- 0.5
+- 0.9
+batch_first: False
+hidden_layer_size: 160
+dropout_rate: 0.1
+
+
+# Model Transformer
